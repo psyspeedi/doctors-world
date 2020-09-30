@@ -1,0 +1,6 @@
+export const SET_LOADING = 'SET_LOADING'
+export const SET_SEARCH = 'SET_SEARCH'
+export const SET_COUNTRIES = 'SET_COUNTRIES'
+export const SET_NOT_FOUND = 'SET_NOT_FOUND'
+export const SET_COUNT_PER_PAGE = 'SET_COUNT_PER_PAGE'
+

@@ -1,3 +1,23 @@
+## 1. Скачать репозиторий
+
+## 2. Выполнить 
+
+`npm install`
+
+## 3. Запустить проект 
+
+`npm run start`
+
+## 4. Для тестов 
+
+`npm run test`
+
+## 5. Так же доступно в сети по ссылке 
+
+`https://doctors-world-ed14a.web.app/`
+
+_______________________________________
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts

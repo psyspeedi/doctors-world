@@ -1,9 +1,23 @@
-import React from 'react';
-import { render } from '@testing-library/react';
+import {render, unmountComponentAtNode} from 'react-dom'
+import {act} from 'react-dom/test-utils'
+import React from 'react'
 import App from './App';
 
-test('renders learn react link', () => {
-  const { getByText } = render(<App />);
-  const linkElement = getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
+let container = null;
+beforeEach(() => {
+  container = document.createElement("div");
+  document.body.appendChild(container);
+});
+
+afterEach(() => {
+  unmountComponentAtNode(container);
+  container.remove();
+  container = null;
+});
+
+it("renders app", () => {
+  act(() => {
+    render(<App />, container);
+  });
+  expect(container.firstChild.classList.contains('App')).toBe(true)
 });
